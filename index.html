@@ -9,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+Devanagari:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -155,6 +155,13 @@
     text-wrap:balance;
     text-shadow:0 2px 40px rgba(0,0,0,.55);
   }
+  .quote--dev{
+    font-family:"Noto Serif Devanagari", "Cormorant Garamond", serif;
+    font-size:clamp(1.12rem, 4.9vw, 1.55rem);
+    line-height:1.42;
+    letter-spacing:0;
+  }
+  .quote--dev em{ font-style:normal; }
   .quote .mark{
     position:absolute;
     top:-.42em; left:50%;
@@ -311,10 +318,12 @@
         </span>
       </div>
 
-      <blockquote class="quote rise mt-3 sm:mt-4 px-1" style="--d:.4s">
+      <blockquote class="quote quote--dev rise mt-3 sm:mt-4 px-1" lang="hi" style="--d:.4s">
         <span class="mark" aria-hidden="true">&ldquo;</span>
-        A life without taking chance is,<br />
-        <em>a life never lived</em>
+        सितारों से आगे जहाँ और भी हैं<br />
+        अभी इश्क़ के इम्तिहाँ और भी हैं<br />
+        <em>तही ज़िंदगी से नहीं ये फ़ज़ाएँ<br />
+        यहाँ सैकड़ों कारवाँ और भी हैं</em>
       </blockquote>
 
       <div class="ornament rise mt-4 sm:mt-5" style="--d:.55s" aria-hidden="true">
